@@ -1,16 +1,21 @@
-[
 {
-  "modid": "betterplacement",
-  "name": "Better Placement",
-  "description": "Syncs block placement to cursor movement, allowing easier and faster building.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "http://tterrag.com",
-  "updateUrl": "http://ci.tterrag.com/job/BetterPlacement",
-  "authorList": ["tterrag"],
-  "credits": "",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "${modId}",
+		"name": "${modName}",
+		"description": "An example mod for Minecraft 1.7.10 with Forge focused on a stable setup.",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "https://github.com/SinTh0r4s/MyMod",
+		"updateUrl": "",
+		"authorList": ["SinTho0r4s"],
+		"credits": "",
+		"logoFile": "",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": [],
+		"dependencies": [],
+		"dependants": [],
+		"useDependencyInformation": false
+	}]
 }
-]
