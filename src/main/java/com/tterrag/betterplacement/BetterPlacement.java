@@ -52,7 +52,11 @@ public class BetterPlacement {
 
     @SubscribeEvent
     public void onClientTick(ClientTickEvent event) throws Throwable {
-        if (event.phase == Phase.START && (!Configs.creativeOnly || Minecraft.getMinecraft().thePlayer.capabilities.isCreativeMode)) {
+        if (event.phase != Phase.START) return;
+
+        Minecraft mc = Minecraft.getMinecraft();
+
+        if (!Configs.creativeOnly || (mc.thePlayer != null && mc.thePlayer.capabilities.isCreativeMode)) {
             int timer = (int) getDelayTimer.invoke(Minecraft.getMinecraft());
             MovingObjectPosition hover = Minecraft.getMinecraft().objectMouseOver;
             if (hover != null && hover.typeOfHit == MovingObjectType.BLOCK) {
